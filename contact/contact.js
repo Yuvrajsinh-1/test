@@ -159,9 +159,9 @@ class ContactForm {
     
         try {
             const formData = new FormData(this.form);
-            const response = await fetch('http://127.0.0.1:5000/submit-contact', {
-                method: 'POST',
-                body: formData
+           const response = await fetch('/submit-contact', {
+              method: 'POST',
+              body: formData
             });
     
             const result = await response.json();
