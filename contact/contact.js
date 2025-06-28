@@ -159,7 +159,7 @@ class ContactForm {
     
         try {
             const formData = new FormData(this.form);
-           const response = await fetch('submit-contact.php', {
+           const response = await fetch('contact.php', {
               method: 'POST',
               body: formData
             });
